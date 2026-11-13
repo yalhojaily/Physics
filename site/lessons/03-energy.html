@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conservation of Energy — Physics Principles</title>
+<meta name="description" content="Work, kinetic and potential energy, conservation of energy and power, with an interactive energy-track lab.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="top">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>Physics Principles</a>
+    <nav class="top-nav" aria-label="Lessons">
+      <a href="../index.html">All lessons</a>
+      <a class="pill" href="02-kinematics.html"><span aria-hidden="true">&larr;</span> Previous: Kinematics</a>
+    </nav>
+  </header>
+
+  <main class="card">
+
+    <article class="text">
+      <div class="text-head">
+        <div class="eyebrow">Mechanics &middot; Lesson 03</div>
+        <h1>Conservation of Energy</h1>
+      </div>
+      <div class="text-scroll" tabindex="0">
+
+        <p class="lead">Energy is never created and never destroyed. It only moves from place to place and changes from one form to another. This single bookkeeping rule holds in every experiment ever performed.</p>
+
+        <h2>Why energy is useful</h2>
+        <p>Newton's laws follow a motion step by step: forces give accelerations, accelerations change velocities. That works, but it can be hard when forces keep changing direction, as on a curved roller-coaster track.</p>
+        <p>Energy offers a shortcut. It is a single number (a scalar, with no direction) that stays the same in total while everything else changes. Compare the energy at the start with the energy at the end and you can often skip everything in between.</p>
+        <p>Energy is measured in <b>joules</b> (J). Lifting a small apple by one metre takes about one joule.</p>
+
+        <h2>Work: how forces transfer energy</h2>
+        <p>A force transfers energy to an object when the object moves in the direction of the force. The amount transferred is called <b>work</b>:</p>
+        <div class="eq"><var>W</var> = <var>F</var><var>d</var> cos &theta;
+          <small>force &times; distance moved &times; cosine of the angle between them</small>
+        </div>
+        <ul>
+          <li>Force along the motion (&theta; = 0&deg;): positive work. The object gains energy.</li>
+          <li>Force against the motion (&theta; = 180&deg;): negative work. The object loses energy. Friction usually does this.</li>
+          <li>Force at right angles to the motion (&theta; = 90&deg;): no work at all.</li>
+        </ul>
+        <p>Work in physics is narrower than in everyday speech. Holding a heavy bag still is tiring, but the bag does not move, so you do no work on it. Carrying it at constant height along a level floor also does no work on the bag: your upward force is perpendicular to the motion.</p>
+        <p>One joule is the work done by a force of one newton over one metre: 1&nbsp;J = 1&nbsp;N&middot;m.</p>
+
+        <h2>Kinetic energy</h2>
+        <p><b>Kinetic energy</b> is the energy an object has because it is moving:</p>
+        <div class="eq"><var>E</var><sub>k</sub> = &frac12;<var>m</var><var>v</var>&sup2;</div>
+        <p>It depends on the <em>square</em> of the speed. A car at 100&nbsp;km/h has four times the kinetic energy it has at 50&nbsp;km/h, which is why its braking distance is four times longer and crashes at speed are so much worse.</p>
+        <p>The link between work and kinetic energy is the <b>work&ndash;energy theorem</b>:</p>
+        <p class="law">The net work done on an object equals the change in its kinetic energy.</p>
+        <div class="example">
+          <span class="tag">Worked example</span>
+          <p>A 1000&nbsp;kg car moves at 20&nbsp;m/s. The brakes supply a friction force of 8000&nbsp;N. How far does it travel before stopping?</p>
+          <p>Kinetic energy: &frac12; &times; 1000 &times; 20&sup2; = 200&nbsp;000&nbsp;J. Friction must remove all of it: 8000 &times; <var>d</var> = 200&nbsp;000, so <var>d</var> = 25&nbsp;m.</p>
+          <p>No acceleration or time was needed.</p>
+        </div>
+
+        <h2>Potential energy</h2>
+        <p><b>Potential energy</b> is energy stored in the position or arrangement of things. It can be released later as motion.</p>
+        <h3>Gravitational potential energy</h3>
+        <p>Lifting an object stores energy in the object&ndash;Earth system:</p>
+        <div class="eq"><var>E</var><sub>p</sub> = <var>m</var><var>g</var><var>h</var>
+          <small>mass &times; 9.8 m/s&sup2; &times; height</small>
+        </div>
+        <p>Only <em>changes</em> in height matter, so you are free to choose where <var>h</var> = 0. The floor, a table top or the lowest point of a track are all fine, as long as you stay consistent.</p>
+        <p>The path does not matter either. Carrying a box up a staircase or lifting it straight up to the same floor stores the same energy.</p>
+        <h3>Elastic potential energy</h3>
+        <p>A stretched or compressed spring stores energy too:</p>
+        <div class="eq"><var>E</var><sub>s</sub> = &frac12;<var>k</var><var>x</var>&sup2;
+          <small><var>k</var> = spring constant (N/m), <var>x</var> = stretch or compression (m)</small>
+        </div>
+        <p>A drawn bow, a trampoline and a wind-up toy all work this way.</p>
+
+        <h2>Conservation of mechanical energy</h2>
+        <p>The sum of kinetic and potential energy is called <b>mechanical energy</b>. When only gravity and springs do work (no friction, no air resistance), it stays constant:</p>
+        <div class="eq"><var>E</var><sub>k</sub> + <var>E</var><sub>p</sub> = constant</div>
+        <div class="eq">&frac12;<var>m</var><var>v</var><sub>1</sub>&sup2; + <var>m</var><var>g</var><var>h</var><sub>1</sub> = &frac12;<var>m</var><var>v</var><sub>2</sub>&sup2; + <var>m</var><var>g</var><var>h</var><sub>2</sub></div>
+        <p>As an object falls, potential energy turns into kinetic energy. As it rises, the reverse happens. A pendulum, a skateboarder in a half-pipe and a planet in an elliptical orbit all trade the two back and forth.</p>
+        <p class="try"><b>Try it.</b> With friction set to <b>None</b>, press <b>Release</b>. The kinetic and potential bars rise and fall, but the total bar never moves. The ball returns to exactly its starting height on the far side, every time.</p>
+
+        <div class="example">
+          <span class="tag">Worked example</span>
+          <p>A roller-coaster car starts from rest at the top of a 20&nbsp;m hill. Ignoring friction, how fast is it moving at the bottom?</p>
+          <p>All the potential energy becomes kinetic: <var>m</var><var>g</var><var>h</var> = &frac12;<var>m</var><var>v</var>&sup2;. The mass cancels, leaving <var>v</var> = &radic;(2<var>g</var><var>h</var>) = &radic;(2 &times; 9.8 &times; 20) &asymp; 19.8&nbsp;m/s.</p>
+          <p>The shape of the track never entered the calculation, and neither did the mass. A heavy car and a light car arrive at the same speed.</p>
+        </div>
+        <p class="try"><b>Try it.</b> Switch the mass between 1&nbsp;kg and 2&nbsp;kg. Every bar doubles, but the motion is identical, because the mass cancels. Then choose <b>Two valleys</b> and release the ball from different heights. It crosses the middle hill only if it starts higher than the hilltop.</p>
+
+        <h2>Where the "lost" energy goes</h2>
+        <p>Real pendulums stop swinging and real balls stop bouncing. Mechanical energy is not conserved when friction or air resistance acts. But the energy has not vanished: it has become <b>thermal energy</b>, the random motion of atoms. The surfaces and the air get slightly warmer. Rub your hands together and you feel it.</p>
+        <p>Counting every form, the books always balance:</p>
+        <p class="law">The total energy of an isolated system is constant. Energy can be transferred or transformed, but never created or destroyed.</p>
+        <p>This is the law of conservation of energy. With friction, the accounting becomes:</p>
+        <div class="eq"><var>E</var><sub>k</sub> + <var>E</var><sub>p</sub> + <var>E</var><sub>thermal</sub> = constant</div>
+        <p>The change is one-way in practice. Mechanical energy readily becomes thermal energy, but the warmth in a brake disc will not gather itself up and set the car moving again. (Why not is the subject of the second law of thermodynamics.)</p>
+        <p class="try"><b>Try it.</b> Set friction to <b>Low</b> and release the ball. Each swing reaches a little lower. The thermal bar grows by exactly what the other two lose, and the total bar still does not move.</p>
+
+        <h3>Other forms of energy</h3>
+        <p>The same rule covers every form: chemical energy in food, fuel and batteries; electrical energy; light and other radiation; nuclear energy. A power station, a muscle and a phone are all devices that convert one form into another.</p>
+
+        <h2>Power</h2>
+        <p><b>Power</b> is the rate at which energy is transferred or work is done:</p>
+        <div class="eq"><var>P</var> = <var>W</var> / <var>t</var>
+          <small>watts (W): 1 W = 1 J/s</small>
+        </div>
+        <p>Climbing the stairs slowly or running up them does the same work, because you gain the same potential energy. Running takes less time, so it requires more power.</p>
+        <p>For an object moving at speed <var>v</var> against a force <var>F</var>, power can also be written <var>P</var> = <var>F</var><var>v</var>.</p>
+        <p>Electricity bills use the kilowatt-hour, which is a unit of energy, not power: 1&nbsp;kWh = 1000&nbsp;W &times; 3600&nbsp;s = 3.6&nbsp;million joules.</p>
+
+        <h3>Efficiency</h3>
+        <p>No machine converts all its input into the form you want. <b>Efficiency</b> is the useful fraction:</p>
+        <div class="eq">efficiency = useful energy out / total energy in</div>
+        <p>An electric motor may be 90% efficient; a petrol engine about 25 to 30%. The remainder is not destroyed. It leaves as thermal energy.</p>
+
+        <h2>Common mistakes</h2>
+        <ul>
+          <li><b>"Energy gets used up."</b> It is converted into less useful forms, usually thermal energy. The total is unchanged.</li>
+          <li><b>"Any force on a moving object does work."</b> Only the part of the force along the motion does work. A force perpendicular to the motion does none.</li>
+          <li><b>Confusing energy and power.</b> Energy is an amount (J); power is a rate (W). A 2000&nbsp;W kettle is not "more energy" than a 10&nbsp;W lamp unless you say for how long.</li>
+          <li><b>Forgetting the square.</b> Doubling the speed quadruples the kinetic energy.</li>
+          <li><b>Using <var>E</var><sub>k</sub> + <var>E</var><sub>p</sub> = constant when friction acts.</b> Include the thermal energy, or use it only where friction is negligible.</li>
+        </ul>
+
+        <h2>Check yourself</h2>
+        <details>
+          <summary>A 2 kg book is lifted 1.5 m onto a shelf. How much gravitational potential energy does it gain?</summary>
+          <p><var>E</var><sub>p</sub> = <var>m</var><var>g</var><var>h</var> = 2 &times; 9.8 &times; 1.5 = 29.4&nbsp;J.</p>
+        </details>
+        <details>
+          <summary>A ball is dropped from 5 m. Ignoring air resistance, how fast is it moving just before it lands?</summary>
+          <p><var>v</var> = &radic;(2<var>g</var><var>h</var>) = &radic;(2 &times; 9.8 &times; 5) = &radic;98 &asymp; 9.9&nbsp;m/s. The mass is not needed.</p>
+        </details>
+        <details>
+          <summary>A satellite moves in a circular orbit. Gravity pulls on it constantly. How much work does gravity do on it?</summary>
+          <p>None. In a circular orbit the pull of gravity is always at right angles to the motion, so cos&nbsp;&theta; = 0. That is consistent with the satellite's speed staying constant.</p>
+        </details>
+        <details>
+          <summary>A 60 kg student climbs a 3 m staircase in 4 s. What power do they develop?</summary>
+          <p>Work = <var>m</var><var>g</var><var>h</var> = 60 &times; 9.8 &times; 3 = 1764&nbsp;J. Power = 1764 / 4 = 441&nbsp;W.</p>
+        </details>
+        <details>
+          <summary>A 1 kg ball released from 4 m on a track rises to only 3 m on the other side. How much thermal energy was produced?</summary>
+          <p>The mechanical energy fell from 1 &times; 9.8 &times; 4 = 39.2&nbsp;J to 1 &times; 9.8 &times; 3 = 29.4&nbsp;J. The difference, 9.8&nbsp;J, became thermal energy.</p>
+        </details>
+
+        <h2>Key points</h2>
+        <ul>
+          <li>Work is energy transferred by a force: <var>W</var> = <var>F</var><var>d</var> cos &theta;.</li>
+          <li>Kinetic energy is &frac12;<var>m</var><var>v</var>&sup2;; gravitational potential energy is <var>m</var><var>g</var><var>h</var>.</li>
+          <li>Without friction, kinetic plus potential energy stays constant.</li>
+          <li>With friction, mechanical energy becomes thermal energy; the total is still constant.</li>
+          <li>Power is energy per unit time, measured in watts.</li>
+        </ul>
+
+        <a class="next-lesson" href="../index.html">
+          <span><small>More lessons are on the way</small>Back to all lessons</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </article>
+
+    <section class="lab" aria-label="Interactive lab">
+      <div class="lab-top">
+        <span class="lab-label">Interactive lab &middot; Energy track</span>
+        <div class="seg" id="e-track" role="group" aria-label="Track shape">
+          <button type="button" data-value="bowl" aria-pressed="true">Bowl</button>
+          <button type="button" data-value="double" aria-pressed="false">Two valleys</button>
+        </div>
+      </div>
+
+      <div class="lab-info">
+        <div class="lab-msg" id="e-msg" aria-live="off"></div>
+        <div class="readouts">
+          <div class="readout"><span>Speed</span><b id="e-speed">0.0 m/s</b></div>
+          <div class="readout"><span>Height</span><b id="e-height">0.0 m</b></div>
+          <div class="readout"><span>Total energy</span><b id="e-total">0.0 J</b></div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <canvas id="stage" role="img" aria-label="A ball on a curved track with bars showing kinetic, potential, thermal and total energy"></canvas>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl-group">
+          <button type="button" class="btn" id="e-go">Release</button>
+          <button type="button" class="btn ghost" id="e-reset">Reset</button>
+        </div>
+        <div class="ctrl-group">
+          <label class="ctrl-label" for="e-start">Start position</label>
+          <input type="range" id="e-start" min="-4.8" max="4.8" step="0.1" value="-4">
+        </div>
+        <div class="ctrl-group">
+          <span class="ctrl-label" id="e-mass-label">Mass</span>
+          <div class="seg" id="e-mass" role="group" aria-labelledby="e-mass-label">
+            <button type="button" data-value="1" aria-pressed="true">1 kg</button>
+            <button type="button" data-value="2" aria-pressed="false">2 kg</button>
+          </div>
+        </div>
+        <div class="ctrl-group">
+          <span class="ctrl-label" id="e-fric-label">Friction</span>
+          <div class="seg" id="e-fric" role="group" aria-labelledby="e-fric-label">
+            <button type="button" data-value="0" aria-pressed="true">None</button>
+            <button type="button" data-value="0.03" aria-pressed="false">Low</button>
+            <button type="button" data-value="0.12" aria-pressed="false">High</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="../js/lab.js"></script>
+<script src="../js/energy.js"></script>
+</body>
+</html>
